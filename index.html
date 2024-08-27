@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+        <!-- <base href="/" /> -->
+
+        <meta charset="UTF-8" />
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+        <meta name="description" content="Click Me." />
+
+        <!-- iOS meta tags & icons -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Abdelrhman Abdelhalim" />
+        <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+
+        <link rel="manifest" href="manifest.json" />
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+
+        <title>Abdelrhman Abdelhalim</title>
+
+        <script>
+            // The value below is injected by flutter build, do not touch.
+            const serviceWorkerVersion = "2592992257";
+        </script>
+        <!-- This script adds the flutter initialization JS code -->
+        <script src="flutter.js" defer></script>
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: #16151A; /* Set the background color of the body */
+            }
+            .container {
+                margin: 0;
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .loader {
+                height: 30vh;
+            }
+        </style>
+    </head>
+
+    <body style="overflow: hidden">
+        <div class="container">
+            <img class="loader" src="assets/giphy.gif" />
+        </div>
+        <script>
+            window.addEventListener('load', function (ev) {
+                // Download main.dart.js
+                _flutter.loader.loadEntrypoint({
+                    serviceWorker: {
+                        serviceWorkerVersion: serviceWorkerVersion,
+                    },
+                    onEntrypointLoaded: function (engineInitializer) {
+                        engineInitializer
+                            .initializeEngine()
+                            .then(function (appRunner) {
+                                appRunner.runApp();
+                            });
+                    },
+                });
+            });
+        </script>
+        <script>
+            window.addEventListener('flutter-first-frame', function () {
+                var el = document.getElementsByClassName('container')[0];
+                el.remove();
+            });
+        </script>
+    </body>
+</html>

@@ -5,7 +5,6 @@
 <p>Computer vision · LLM systems · AI security</p>
 
 <p>
-  <a href="https://abdelrhmanidk.dev"><img src="https://img.shields.io/badge/Portfolio-0F766E?style=for-the-badge" alt="Portfolio" /></a>
   <a href="https://www.linkedin.com/in/abdelrhman-abdelhalim/"><img src="https://img.shields.io/badge/LinkedIn-1F2937?style=for-the-badge" alt="LinkedIn" /></a>
 </p>
 
